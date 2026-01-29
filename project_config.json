@@ -1,0 +1,61 @@
+{
+  "project_name": "Simple JSON File Visual Editor",
+  "project_type": "web_app",
+  "goal": "Allow users to upload their own JSON files, visually edit them using a clean form interface, and export the updated JSON file safely with no syntax errors.",
+  "tech_stack": {
+    "frontend": ["HTML", "CSS", "Vanilla JavaScript"],
+    "backend": null,
+    "libraries": []
+  },
+  "core_features": [
+    "Upload JSON file from user's computer",
+    "Parse and validate JSON automatically",
+    "Generate editable UI based on JSON structure",
+    "Boolean values displayed as toggle switches",
+    "Number values displayed as numeric input fields",
+    "String values displayed as text boxes",
+    "Nested objects shown in collapsible sections",
+    "Arrays shown as editable lists with add/remove buttons",
+    "Each value must show its JSON key as a clear label",
+    "Live update of JSON object when values change",
+    "Download/export the edited JSON file",
+    "Reset to original uploaded file button"
+  ],
+  "ui_design": {
+    "style": "minimal",
+    "theme": "light",
+    "layout": "responsive",
+    "requirements": [
+      "Simple and readable interface",
+      "Organized spacing and alignment",
+      "Clearly labeled fields",
+      "No clutter or unnecessary graphics",
+      "Scrollable sections for large JSON files"
+    ]
+  },
+  "behavior_rules": [
+    "All editing must happen client-side only",
+    "Do not reload the page",
+    "Preserve original key order",
+    "Preserve nested structure",
+    "Prevent invalid JSON output",
+    "Auto-detect value data types"
+  ],
+  "error_handling": [
+    "Display message if file is not valid JSON",
+    "Prevent export if JSON becomes invalid",
+    "Handle empty or corrupted files gracefully"
+  ],
+  "export_settings": {
+    "format": "json",
+    "filename": "edited_file.json",
+    "ensure_valid_syntax": true
+  },
+  "code_quality": {
+    "no_console_errors": true,
+    "well_commented": true,
+    "modular_functions": true,
+    "no_external_dependencies": true,
+    "cross_browser_support": true
+  }
+}
